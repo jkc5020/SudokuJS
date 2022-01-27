@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        
+        tr, td, th{
+            table-layout: fixed;
+            border:1px solid black;
+        }
+
+        table{
+            table-layout: fixed;
+            height: 500px;
+            width: 500px;
+            border:1px solid black;
+        }
+        .thickBorder{
+            border-right-width: 2px;
+        }
+        .thickBorder2 td{
+            border-bottom-width: 2px;
+        }
+
+        
+    </style>
+    <head>
+        <script type = "module" src="Board.js"></script>
+        <script type = "module" src="script.js"></script>
+    </head>
+
+<body>
+    
+    <h1>Welcome to Sudoku!</h1>
+    <div>
+        <table id = "board">
+            <tr>
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td class = "thickBorder">
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td class = "thickBorder">
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+            </tr>
+
+            <tr >
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td class = "thickBorder">
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td class = "thickBorder">
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+            </tr>
+            <tr class = "thickBorder2">
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td class = "thickBorder">
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td class = "thickBorder">
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td class = "thickBorder">
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td class = "thickBorder">
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td class = "thickBorder">
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td class = "thickBorder">
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+            </tr>
+            <tr class = "thickBorder2">
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td class = "thickBorder">
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td class = "thickBorder">
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td class = "thickBorder">
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td class = "thickBorder">
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td class = "thickBorder">
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td class = "thickBorder">
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td class = "thickBorder">
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td class = "thickBorder">
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+                <td>
+
+                </td>
+
+            </tr>
+
+            
+        </table>
+    </div>
+
+    <br>
+    <div>
+        <form id = "inputForm">
+            <label for="x">X value:</label><br>
+            <input type="text" id="x" name="x" value=""><br>
+            <label for="y">Y value:</label><br>
+            <input type="text" id="y" name="y" value=""><br>
+            <label for="num">Number:</label><br>
+            <input type="text" id="number" name="number" value=""><br><br>
+          </form> 
+          <button id = "button" >Input</button>
+          <br>
+          <button id = "verify" > Verify board</button>
+    </div>
+    <p id="demo"></p>
+
+    
+
+
+
+</body>
+</html>
